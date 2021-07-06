@@ -9,6 +9,9 @@
  */
 const lottery = (arr, num) => {
     const min = 0, max = arr.length, res = [], idxs = [],logs = [];
+    if(max< num) {
+        return {res: arr, idxs:idxs, logs: logs}
+    }
     while(res.length < num) {
         let idx = Math.floor(Math.random() * (max - min)) + min;
         logs.push(idx)
