@@ -8,7 +8,7 @@
  *      logs    抽奖过程中抽中的所有号码
  */
 const lottery = (arr, num) => {
-    let min = 0, max = arr.length, res = [], idxs = [],logs = [];
+    const min = 0, max = arr.length, res = [], idxs = [],logs = [];
     while(res.length < num) {
         let idx = Math.floor(Math.random() * (max - min)) + min;
         logs.push(idx)
