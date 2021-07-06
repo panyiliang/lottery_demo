@@ -9,7 +9,7 @@
  */
 const lottery = (arr, num) => {
     const min = 0, max = arr.length, res = [], idxs = [],logs = [];
-    if(max< num) {
+    if(max<= num) {
         return {res: arr, idxs:idxs, logs: logs}
     }
     while(res.length < num) {
